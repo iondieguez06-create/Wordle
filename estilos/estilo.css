@@ -1,0 +1,122 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:system-ui, Arial, sans-serif;
+  color:#111;
+}
+
+.barra-superior{
+  height:50px;
+  width:100%;
+  background:#fff;
+  border-bottom:1px solid #e5e5e5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.contenedor-titulos{
+  text-align:center;
+}
+
+.titulo{
+  font-size:1rem;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+
+.subtitulo{
+  font-size:0.7rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  color:#737373;
+  margin-top:2px;
+}
+
+.contenedor{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+}
+
+.palabra{
+  font-size:2.5rem;
+  text-transform:uppercase;
+  letter-spacing:0.3rem;
+}
+
+#tablero{
+  display:flex;
+  flex-direction:column;   
+  gap:4.5px;
+  margin-top:40px;
+  align-items:center;      
+}
+
+
+.fila{
+  display:flex;           
+  gap:4.5px;
+}
+
+.casilla{
+  width:50px;
+  height:50px;
+  border:2px solid #d3d3d3;
+  background:#ffffff;
+  font-size:2rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-align:center;
+  border-radius:4px;
+}
+
+.casilla:focus{
+  outline:none;
+  border-color:#02a6d7;
+}
+
+#tableroLetras{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 7px;
+  margin-top:40px;
+  justify-content:center;
+  max-width:600px;
+  margin-inline:auto;
+}
+
+.casillaLetra{
+  width:50px;       
+  height:56px;
+  flex:0 0 auto;     
+  border:2px;
+  background:#e2e8f0;
+  font-size:0.9rem;
+  font-weight:bold;
+  text-transform:uppercase;
+  text-align:center;
+  border-radius:4px;
+  box-sizing:border-box;
+  
+}
+#enter{
+  width: 80px;
+}
+#retroceder{
+  width: 80px;
+}
+.casillaLetra:hover{
+  cursor:pointer;
+  background:#afb3b9;
+}
+
+.correcta{ background:#43a047; color:white; border:none; }   
+.esta{ background:#e4a81d; color:white; border:none; }   
+.ausente{  background:#757575; color:white; border:none; }   
+

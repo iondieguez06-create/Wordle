@@ -1,7 +1,98 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
     <head>
-        <title>Wordle Game</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <script src="script.js" defer></script>
+        <meta charset="UTF-8">
+        <title>Wordle - Palabra del día</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos/estilo.css">
+        <script src="js/comportamiento.js" defer></script>
     </head>
+    <body>
+
+        <header class="barra-superior">
+            <div class="contenedor-titulos">
+                <h1 class="titulo">La palabra del día</h1>
+                <h2 class="subtitulo"></h2>
+            </div>
+        </header>
+
+        <main class="contenedor">
+            <h1 id="palabra" class="palabra"></h1>
+        </main>
+        <div id="tablero">
+            <div class="fila">
+                <input type="text" maxlength="1" class="casilla fila1">
+                <input type="text" maxlength="1" class="casilla fila1">
+                <input type="text" maxlength="1" class="casilla fila1">
+                <input type="text" maxlength="1" class="casilla fila1">
+                <input type="text" maxlength="1" class="casilla fila1">
+            </div>
+            <div class="fila">
+                <input type="text" maxlength="1" class="casilla fila2">
+                <input type="text" maxlength="1" class="casilla fila2">
+                <input type="text" maxlength="1" class="casilla fila2">
+                <input type="text" maxlength="1" class="casilla fila2">
+                <input type="text" maxlength="1" class="casilla fila2">
+            </div>
+            <div class="fila">
+                <input type="text" maxlength="1" class="casilla fila3">
+                <input type="text" maxlength="1" class="casilla fila3">
+                <input type="text" maxlength="1" class="casilla fila3">
+                <input type="text" maxlength="1" class="casilla fila3">
+                <input type="text" maxlength="1" class="casilla fila3">
+            </div>
+            <div class="fila">
+                <input type="text" maxlength="1" class="casilla fila4">
+                <input type="text" maxlength="1" class="casilla fila4">
+                <input type="text" maxlength="1" class="casilla fila4">
+                <input type="text" maxlength="1" class="casilla fila4">
+                <input type="text" maxlength="1" class="casilla fila4">
+            </div>
+            <div class="fila">
+                <input type="text" maxlength="1" class="casilla fila5">
+                <input type="text" maxlength="1" class="casilla fila5">
+                <input type="text" maxlength="1" class="casilla fila5">
+                <input type="text" maxlength="1" class="casilla fila5">
+                <input type="text" maxlength="1" class="casilla fila5">
+            </div>
+            <div class="fila">
+                <input type="text" maxlength="1" class="casilla fila6">
+                <input type="text" maxlength="1" class="casilla fila6">
+                <input type="text" maxlength="1" class="casilla fila6">
+                <input type="text" maxlength="1" class="casilla fila6">
+                <input type="text" maxlength="1" class="casilla fila6">
+            </div>
+        </div>
+        <div id="tableroLetras">
+            <button class="casillaLetra">Q</button>
+            <button class="casillaLetra">W</button>
+            <button class="casillaLetra">E</button>
+            <button class="casillaLetra">R</button>
+            <button class="casillaLetra">T</button>
+            <button class="casillaLetra">Y</button>
+            <button class="casillaLetra">U</button>
+            <button class="casillaLetra">I</button>
+            <button class="casillaLetra">O</button>
+            <button class="casillaLetra">P</button>
+            <button class="casillaLetra">A</button>
+            <button class="casillaLetra">S</button>
+            <button class="casillaLetra">D</button>
+            <button class="casillaLetra">F</button>
+            <button class="casillaLetra">G</button>
+            <button class="casillaLetra">H</button>
+            <button class="casillaLetra">J</button>
+            <button class="casillaLetra">K</button>
+            <button class="casillaLetra">L</button>
+            <button class="casillaLetra">Ñ</button>
+            <button id="retroceder" class="casillaLetra">⌫</button>
+            <button class="casillaLetra">Z</button>
+            <button class="casillaLetra">X</button>
+            <button class="casillaLetra">C</button>
+            <button class="casillaLetra">V</button>
+            <button class="casillaLetra">B</button>
+            <button class="casillaLetra">N</button>
+            <button class="casillaLetra">M</button>
+            <button id="enter" class="casillaLetra">⏎</button>
+        </div>
+    </body>
 </html>
