@@ -10,10 +10,11 @@ El proyecto ha sido desarrollado por **Ion Dieguez**
   + **Verde:** Acertado letra y posicion
   + **Naranja:** Acertado letra pero no posicion
   + **Gris:** No acertado ni letra ni posicion  
+---
 Tabla:
   
 | Palabra | FeedBack |
-|-------|-------|
+|:-------:|:-------:|
 | Porra | VGVVG |
 | Perri | VVVVG |
 | Perro | VVVVV |
@@ -29,3 +30,5 @@ async function iniciarJuego() {
   console.log("Palabra secreta:", palabraSecreta);
 }
 ```
+>Esto es wordle
+>> Un juego de adivinar la palabra \*
