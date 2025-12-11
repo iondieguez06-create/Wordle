@@ -17,3 +17,15 @@ Tabla:
 | Porra | VGVVG |
 | Perri | VVVVG |
 | Perro | VVVVV |
+
+[Enlace al proyecto](https://github.com/iondieguez06-create/Wordle/)
+![Imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Wordle_Logo.svg/1200px-Wordle_Logo.svg.png)
+
+``` JavaScript
+async function iniciarJuego() {
+  const palabra = await obtenerPalabra();
+  palabraSecreta = palabra.toUpperCase();
+  palabraCargada = true;
+  console.log("Palabra secreta:", palabraSecreta);
+}
+```
